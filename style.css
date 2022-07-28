@@ -91,6 +91,7 @@ p {
   align-items: center;
   border-radius: 0.7em;
   cursor: pointer;
+  transition: 0.5s;
 }
 .btn:hover {
     background: hsl(212, 21%, 14%);
