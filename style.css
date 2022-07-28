@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+}
+
+.card {
+  width: 420px;
+  height: 750px;
+  margin: auto;
+  background: white;
+  border-radius: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 1.3em 1.3em 0 0;
+}
+
+.image .desktop {
+  position: fixed;
+  visibility: hidden;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 5px;
+}
+
+.preview {
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+h1 {
+  margin: 20px 0;
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+
+}
+
+p {
+  line-height: 1.5rem;
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.new {
+  display: inline-block;
+  color: hsl(158, 36%, 37%);
+}
+
+.oldBox {
+  position: relative;
+}
+
+.old {
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  margin-left: 40px;
+  text-decoration: line-through;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  color: white;
+  display: flex;
+  background: hsl(158, 36%, 37%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7em;
+  cursor: pointer;
+}
+.btn:hover {
+    background: hsl(212, 21%, 14%);
+}
+
+.btn span {
+  margin: 0 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+}
+
+@media screen and (min-width:769px) {
+  .card {
+    flex-direction: row;
+    width: 650px;
+    height: 520px;
+      border-radius: 1.3em;
+  }
+
+  .image {
+    width: 50%;
+    height: 100%;
+  }
+  img {
+    height: 100%;
+      border-radius: 1.3em 0 0 1.3em;
+
+  }
+
+  .content {
+    width: 50%;
+    height: 100%;
+      margin: 0;
+      padding: 30px 30px 0 30px;
+
+  }
+
+  .image .mobile {
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .image .desktop {
+    visibility: visible;
+    position: static;
+  }
+  .old {
+    margin-left: 30px;
+  }
+
+}
